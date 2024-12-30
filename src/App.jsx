@@ -22,9 +22,9 @@ function App() {
   // Afișăm interfața de selecție dacă nu a fost selectat un blockchain
   if (!selectedBlockchain) {
     return (
-      <div className={`h-screen p-5 px-28 ${darkMode ? 'bg-black text-white' : 'bg-white text-black'}`}>
+      <div className={`min-h-screen p-5 px-28 ${darkMode ? 'bg-black text-white' : 'bg-white text-black'} flex flex-col`}>
         <div className="grid grid-cols-12 gap-4">
-          <div className="col-span-11 flex items-center ">
+          <div className="col-span-11 flex items-center">
             {/* Logo ocupă 4 coloane pe desktop, 12 coloane pe mobil */}
             <GiCube onClick={() => handleNavigation('/App')}
               className='w-10 h-10 transform transition-all duration-300 hover:scale-105 
@@ -34,12 +34,12 @@ function App() {
           hover:shadow-4xl hover:opacity-90 '>rosibes</p>
           </div>
           {/* Toggle ocupă 8 coloane pe desktop, 12 coloane pe mobil */}
-          <div className=' col-span-1 mt-5'>
+          <div className='col-span-1 mt-5'>
             <Toggle darkMode={darkMode} setDarkMode={setDarkMode} />
           </div>
         </div>
 
-        <div className='mt-20'>
+        <div className='mt-20 flex-grow'>
           <p className='text-5xl font-bold'>Choose a Blockchain to get Started</p>
           <br />
           <button
@@ -62,8 +62,10 @@ function App() {
             Ethereum
           </button>
         </div>
-        <div className="w-full max-w-[1200px] mt-4 text-sm border-t absolute bottom-0">
-          <footer className=" text-gray-500  py-4 text-sm bottom-0">
+
+        {/* Footer se află la baza paginii */}
+        <div className="w-full text-sm border-t">
+          <footer className="text-gray-500 py-4 text-sm">
             Developed by <a
               href="https://x.com/rosibes27"
               target="_blank"
@@ -75,8 +77,7 @@ function App() {
   }
 
   return (
-
-    <div className="'bg-white text-black h-screen p-5 px-28 ">
+    <div className={`min-h-screen p-5 px-28 ${darkMode ? 'bg-black text-white' : 'bg-white text-black'} flex flex-col`}>
       {/* Switch pentru Night/Day Mode */}
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-11 flex items-center mt-4">
@@ -88,15 +89,17 @@ function App() {
             className='ml-4 text-3xl font-bold transform transition-all duration-300 hover:scale-105 
           hover:shadow-4xl hover:opacity-90 '>rosibes</p>
         </div>
-        {/* Toggle ocupă 8 coloane pe desktop, 12 coloane pe mobil */}
-
       </div>
 
-      <p>{mnemonic}</p>
-      {selectedBlockchain === 'solana' && <SolanaWallet mnemonic={mnemonic} />}
-      {selectedBlockchain === 'ethereum' && <EthWallet mnemonic={mnemonic} />}
-      <div className="w-full max-w-[1200px] mt-4 text-sm border-t absolute bottom-0">
-        <footer className=" text-gray-500  py-4 text-sm bottom-0">
+      <div className='mt-20 flex-grow'>
+        <p>{mnemonic}</p>
+        {selectedBlockchain === 'solana' && <SolanaWallet mnemonic={mnemonic} />}
+        {selectedBlockchain === 'ethereum' && <EthWallet mnemonic={mnemonic} />}
+      </div>
+
+      {/* Footer se află la baza paginii */}
+      <div className="w-full text-sm border-t">
+        <footer className="text-gray-500 py-4 text-sm">
           Developed by <a
             href="https://x.com/rosibes27"
             target="_blank"
