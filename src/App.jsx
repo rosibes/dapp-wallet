@@ -26,10 +26,10 @@ function App() {
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-11 flex items-center ">
             {/* Logo ocupă 4 coloane pe desktop, 12 coloane pe mobil */}
-            <GiCube onClick={() => handleNavigation('/App.jsx')}
+            <GiCube onClick={() => handleNavigation('/App')}
               className='w-10 h-10 transform transition-all duration-300 hover:scale-105 
           hover:shadow-4xl hover:opacity-90 ' /> {/* Iconul de tip Cube (Blockchain) */}
-            <p onClick={() => handleNavigation('/App.jsx')}
+            <p onClick={() => handleNavigation('/App')}
               className='ml-4 text-3xl font-bold transform transition-all duration-300 hover:scale-105 
           hover:shadow-4xl hover:opacity-90 '>rosibes</p>
           </div>
@@ -81,10 +81,10 @@ function App() {
       <div className="grid grid-cols-12 gap-4">
         <div className="col-span-11 flex items-center mt-4">
           {/* Logo ocupă 4 coloane pe desktop, 12 coloane pe mobil */}
-          <GiCube onClick={() => handleNavigation('/App.jsx')}
+          <GiCube onClick={() => handleNavigation('/App')}
             className='w-10 h-10 transform transition-all duration-300 hover:scale-105 
           hover:shadow-4xl hover:opacity-90 ' /> {/* Iconul de tip Cube (Blockchain) */}
-          <p onClick={() => handleNavigation('/App.jsx')}
+          <p onClick={() => handleNavigation('/App')}
             className='ml-4 text-3xl font-bold transform transition-all duration-300 hover:scale-105 
           hover:shadow-4xl hover:opacity-90 '>rosibes</p>
         </div>
