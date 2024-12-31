@@ -179,7 +179,7 @@ const toggleKeyVisibility = (index) => {
                         <div className=" px-10 bg-gray-50 rounded-md shadow-md p-7 mb-10">
                             <div className="mb-5">
                                 <p className="font-bold">Address</p>
-                                <p className="text-gray-700">{wallet.address}</p>
+                                <p className="text-gray-700">{wallet.publicKey}</p>
                             </div>
                             <div>
                                 <p className="font-bold">Private Key</p>
