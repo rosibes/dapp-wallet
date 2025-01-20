@@ -7,9 +7,9 @@ ETH/SOlana Wallet Generator.
 ## Features
 
 
-- **GGenerate Wallet: Create a new wallet and view generated private and public keys.
-- **GToggle Visibility: Show or hide private keys and recovery phrases to enhance security.
-- **GCopy to Clipboard: Easily copy private keys, public keys, and the recovery phrase.
+- GGenerate Wallet: Create a new wallet and view generated private and public keys.
+- GToggle Visibility: Show or hide private keys and recovery phrases to enhance security.
+- GCopy to Clipboard: Easily copy private keys, public keys, and the recovery phrase.
 
 
 
