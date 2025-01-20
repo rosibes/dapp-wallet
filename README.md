@@ -1,4 +1,31 @@
+# ETH/Solana Wallet Generator
+
 Live view: https://rosibes-wallet.vercel.app/
+
+ETH/SOlana Wallet Generator.
+
+## Features
+
+
+- **GGenerate Wallet: Create a new wallet and view generated private and public keys.
+- **GToggle Visibility: Show or hide private keys and recovery phrases to enhance security.
+- **GCopy to Clipboard: Easily copy private keys, public keys, and the recovery phrase.
+
+
+
+## How It Works
+
+### Generating a Wallet:
+1. Generates a new mnemonic phrase and derives the corresponding seed.
+2. Uses the seed to generate private and public keys.
+3. Displays the generated keys and mnemonic phrase.
+
+### Visibility Toggle:
+- Private keys and recovery phrases can be toggled between visible and censored (asterisks) for security.
+
+### Clipboard Copy:
+
+- Provides functionality to copy private keys, public keys, and the recovery phrase to the clipboard.
 
 # React + Vite
 
